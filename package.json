@@ -1,0 +1,87 @@
+{
+  "name": "impeditmaiores",
+  "version": "1.0.0",
+  "description": "Compact, modular JavaScript wrappers for the ArcGIS REST API that run in Node.js and modern browsers.",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/fetch-mock": "^6.0.4",
+    "@types/jasmine": "^2.8.2",
+    "@types/node": "^6.14.4",
+    "acetate": "^2.0.8",
+    "acetate-cli": "^1.0.1",
+    "changelog-parser": "^2.7.0",
+    "cheerio": "^1.0.0-rc.3",
+    "codecov": "^3.7.0",
+    "commitizen": "^3.1.1",
+    "concurrently": "^3.5.1",
+    "cpx": "^1.5.0",
+    "cross-spawn": "^5.1.0",
+    "cz-lerna-changelog": "github:patrickarlt/cz-lerna-changelog#3fe7650a2e2e624b1f46e5031c96119759698288",
+    "date-fns": "^1.29.0",
+    "event-stream": "3.3.4",
+    "fetch-mock": "^5.13.1",
+    "gh-pages": "^1.1.0",
+    "gh-release": "^3.4.0",
+    "husky": "^4.2.3",
+    "inspect-process": "^0.5.0",
+    "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-jasmine-diff-reporter": "^1.1.1",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-typescript": "^4.0.0",
+    "karma-typescript-es6-transform": "^4.0.0",
+    "lerna": "^2.5.1",
+    "lint-staged": "^4.3.0",
+    "minimatch": "^3.0.4",
+    "node-sass": "^4.12.0",
+    "onchange": "^3.3.0",
+    "prettier": "^1.17.0",
+    "resolve": "^1.5.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^2.26.8",
+    "rollup-plugin-filesize": "^9.0.2",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "shelljs": "^0.7.8",
+    "slug": "^0.9.1",
+    "sri-toolbox": "0.2.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-config-standard": "^8.0.1",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.0.0"
+  },
+  "dependencies": {
+    "isomorphic-form-data": "^2.0.0",
+    "cross-fetch": "^3.0.0",
+    "isomorphic-fetch": "*",
+    "tslib": "^1.13.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write --parser typescript --tab-width 2 --use-tabs false",
+      "tslint --project tsconfig.json",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BellaSchumm/impeditmaiores.git"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/BellaSchumm/impeditmaiores.git",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "author": "EvieMetz"
+}
